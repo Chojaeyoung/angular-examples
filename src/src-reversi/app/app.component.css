@@ -3,3 +3,34 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+table tr td {
+  border : 1px solid black;
+}
+
+.goBoard-area {
+  width:500px;
+  height: 500px;
+}
+
+.stone-area {
+  width:60px;
+  height: 60px;
+}
+
+.none-stone {
+  background-color: white;
+}
+
+.black-stone {
+  background-image:url("src-reversi/img/black-stone.jpg");
+  background-size:60px 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.white-stone {
+  background-image:url("src-reversi/img/white-stone.jpg");
+  background-size:60px 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
