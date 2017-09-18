@@ -1,16 +1,37 @@
-h1 {
+h1{
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+  font-size: 100%;
 }
 
-table tr td {
-  border : 1px solid black;
+table {
+  display: inline;
+}
+
+.goBoard-background {
+  width:500px;
+  height: 500px;
+  vertical-align: top;
+  position:absolute;
+  border-collapse:collapse;
+}
+
+.goBoard-background tr td {
+  border:1px solid black;
+  width:60px;
+  height: 60px;
 }
 
 .goBoard-area {
   width:500px;
   height: 500px;
+  vertical-align: top;
+  position:absolute;
+  border-collapse:collapse;
+}
+
+.goBoard-area tr td {
+  border : 1px solid transparent;
 }
 
 .stone-area {
@@ -19,18 +40,32 @@ table tr td {
 }
 
 .none-stone {
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .black-stone {
-  background-image:url("src-reversi/img/black-stone.jpg");
+  /*background-image:url("src-reversi/img/black-stone.jpg");
   background-size:60px 60px;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+
+  background-color:black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #404040;
+  background-image: -webkit-radial-gradient( 40% 40%, circle closest-corner, #404040 0%, rgba(0, 0, 0, 0) 90%);
+  background-image: -moz-radial-gradient( 40% 40%, circle closest-side, #404040 0%, rgba(0, 0, 0, 0) 90%);   
 }
 .white-stone {
-  background-image:url("src-reversi/img/white-stone.jpg");
+  /*background-image:url("src-reversi/img/white-stone.jpg");
   background-size:60px 60px;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #404040 , inset -3px -3px 5px gray;  
+}
+.dashboard {
+  position:absolute;
+  left:550px;
 }

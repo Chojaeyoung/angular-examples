@@ -1,84 +1,123 @@
-<table class="goBoard-area">
+<table class="goBoard-background">
   <tbody>
     <tr> 
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+     <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="goBoard-area">
+  <tbody>
+    <!--<tr *ngFor="let row in goBoardValue; let i = index">
+      <td *ngFor="let cell in row[i]; let j = index" class="stone-area" [ngClass]="cell" (click)="clickStoneArea(i,j)"></td>
+    </tr>-->
+    <tr> 
       <td class="stone-area" [ngClass]="goBoardValue[0][0]" (click)="clickStoneArea(0,0)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[0][1]" (click)="clickStoneArea(0,1)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[0][2]" (click)="clickStoneArea(0,2)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[0][3]" (click)="clickStoneArea(0,3)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[0][4]" (click)="clickStoneArea(0,4)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[0][5]" (click)="clickStoneArea(0,5)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[0][6]" (click)="clickStoneArea(0,6)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[0][7]" (click)="clickStoneArea(0,7)"></td>
-    </tr>
-     <tr>
       <td class="stone-area" [ngClass]="goBoardValue[1][0]" (click)="clickStoneArea(1,0)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[1][1]" (click)="clickStoneArea(1,1)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[1][2]" (click)="clickStoneArea(1,2)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[1][3]" (click)="clickStoneArea(1,3)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[1][4]" (click)="clickStoneArea(1,4)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[1][5]" (click)="clickStoneArea(1,5)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[1][6]" (click)="clickStoneArea(1,6)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[1][7]" (click)="clickStoneArea(1,7)"></td>
-    </tr>
-     <tr>
       <td class="stone-area" [ngClass]="goBoardValue[2][0]" (click)="clickStoneArea(2,0)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[2][1]" (click)="clickStoneArea(2,1)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[2][2]" (click)="clickStoneArea(2,2)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[2][3]" (click)="clickStoneArea(2,3)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[2][4]" (click)="clickStoneArea(2,4)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[2][5]" (click)="clickStoneArea(2,5)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[2][6]" (click)="clickStoneArea(2,6)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[2][7]" (click)="clickStoneArea(2,7)"></td>
-    </tr>
-     <tr>
       <td class="stone-area" [ngClass]="goBoardValue[3][0]" (click)="clickStoneArea(3,0)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[3][1]" (click)="clickStoneArea(3,1)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[3][2]" (click)="clickStoneArea(3,2)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[3][3]" (click)="clickStoneArea(3,3)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[3][4]" (click)="clickStoneArea(3,4)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[3][5]" (click)="clickStoneArea(3,5)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[3][6]" (click)="clickStoneArea(3,6)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[3][7]" (click)="clickStoneArea(3,7)"></td>
-    </tr>
-     <tr>
       <td class="stone-area" [ngClass]="goBoardValue[4][0]" (click)="clickStoneArea(4,0)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[4][1]" (click)="clickStoneArea(4,1)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[4][2]" (click)="clickStoneArea(4,2)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[4][3]" (click)="clickStoneArea(4,3)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[4][4]" (click)="clickStoneArea(4,4)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[4][5]" (click)="clickStoneArea(4,5)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[4][6]" (click)="clickStoneArea(4,6)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[4][7]" (click)="clickStoneArea(4,7)"></td>
-    </tr>
-     <tr>
       <td class="stone-area" [ngClass]="goBoardValue[5][0]" (click)="clickStoneArea(5,0)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[5][1]" (click)="clickStoneArea(5,1)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[5][2]" (click)="clickStoneArea(5,2)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[5][3]" (click)="clickStoneArea(5,3)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[5][4]" (click)="clickStoneArea(5,4)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[5][5]" (click)="clickStoneArea(5,5)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[5][6]" (click)="clickStoneArea(5,6)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[5][7]" (click)="clickStoneArea(5,7)"></td>
-    </tr>
-     <tr>
       <td class="stone-area" [ngClass]="goBoardValue[6][0]" (click)="clickStoneArea(6,0)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[6][1]" (click)="clickStoneArea(6,1)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[6][2]" (click)="clickStoneArea(6,2)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[6][3]" (click)="clickStoneArea(6,3)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[6][4]" (click)="clickStoneArea(6,4)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[6][5]" (click)="clickStoneArea(6,5)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[6][6]" (click)="clickStoneArea(6,6)"></td>
-      <td class="stone-area" [ngClass]="goBoardValue[6][7]" (click)="clickStoneArea(6,7)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[7][0]" (click)="clickStoneArea(7,0)"></td>
     </tr>
      <tr>
-      <td class="stone-area" [ngClass]="goBoardValue[7][0]" (click)="clickStoneArea(7,0)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[0][1]" (click)="clickStoneArea(0,1)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[1][1]" (click)="clickStoneArea(1,1)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[2][1]" (click)="clickStoneArea(2,1)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[3][1]" (click)="clickStoneArea(3,1)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[4][1]" (click)="clickStoneArea(4,1)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[5][1]" (click)="clickStoneArea(5,1)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[6][1]" (click)="clickStoneArea(6,1)"></td>
       <td class="stone-area" [ngClass]="goBoardValue[7][1]" (click)="clickStoneArea(7,1)"></td>
+    </tr>
+     <tr>
+      <td class="stone-area" [ngClass]="goBoardValue[0][2]" (click)="clickStoneArea(0,2)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[1][2]" (click)="clickStoneArea(1,2)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[2][2]" (click)="clickStoneArea(2,2)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[3][2]" (click)="clickStoneArea(3,2)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[4][2]" (click)="clickStoneArea(4,2)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[5][2]" (click)="clickStoneArea(5,2)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[6][2]" (click)="clickStoneArea(6,2)"></td>
       <td class="stone-area" [ngClass]="goBoardValue[7][2]" (click)="clickStoneArea(7,2)"></td>
+    </tr>
+     <tr>
+      <td class="stone-area" [ngClass]="goBoardValue[0][3]" (click)="clickStoneArea(0,3)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[1][3]" (click)="clickStoneArea(1,3)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[2][3]" (click)="clickStoneArea(2,3)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[3][3]" (click)="clickStoneArea(3,3)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[4][3]" (click)="clickStoneArea(4,3)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[5][3]" (click)="clickStoneArea(5,3)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[6][3]" (click)="clickStoneArea(6,3)"></td>
       <td class="stone-area" [ngClass]="goBoardValue[7][3]" (click)="clickStoneArea(7,3)"></td>
+    </tr>
+     <tr>
+      <td class="stone-area" [ngClass]="goBoardValue[0][4]" (click)="clickStoneArea(0,4)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[1][4]" (click)="clickStoneArea(1,4)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[2][4]" (click)="clickStoneArea(2,4)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[3][4]" (click)="clickStoneArea(3,4)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[4][4]" (click)="clickStoneArea(4,4)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[5][4]" (click)="clickStoneArea(5,4)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[6][4]" (click)="clickStoneArea(6,4)"></td>
       <td class="stone-area" [ngClass]="goBoardValue[7][4]" (click)="clickStoneArea(7,4)"></td>
+    </tr>
+     <tr>
+      <td class="stone-area" [ngClass]="goBoardValue[0][5]" (click)="clickStoneArea(0,5)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[1][5]" (click)="clickStoneArea(1,5)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[2][5]" (click)="clickStoneArea(2,5)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[3][5]" (click)="clickStoneArea(3,5)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[4][5]" (click)="clickStoneArea(4,5)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[5][5]" (click)="clickStoneArea(5,5)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[6][5]" (click)="clickStoneArea(6,5)"></td>
       <td class="stone-area" [ngClass]="goBoardValue[7][5]" (click)="clickStoneArea(7,5)"></td>
+    </tr>
+     <tr>
+      <td class="stone-area" [ngClass]="goBoardValue[0][6]" (click)="clickStoneArea(0,6)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[1][6]" (click)="clickStoneArea(1,6)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[2][6]" (click)="clickStoneArea(2,6)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[3][6]" (click)="clickStoneArea(3,6)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[4][6]" (click)="clickStoneArea(4,6)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[5][6]" (click)="clickStoneArea(5,6)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[6][6]" (click)="clickStoneArea(6,6)"></td>
       <td class="stone-area" [ngClass]="goBoardValue[7][6]" (click)="clickStoneArea(7,6)"></td>
+    </tr>
+     <tr>
+      <td class="stone-area" [ngClass]="goBoardValue[0][7]" (click)="clickStoneArea(0,7)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[1][7]" (click)="clickStoneArea(1,7)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[2][7]" (click)="clickStoneArea(2,7)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[3][7]" (click)="clickStoneArea(3,7)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[4][7]" (click)="clickStoneArea(4,7)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[5][7]" (click)="clickStoneArea(5,7)"></td>
+      <td class="stone-area" [ngClass]="goBoardValue[6][7]" (click)="clickStoneArea(6,7)"></td>
       <td class="stone-area" [ngClass]="goBoardValue[7][7]" (click)="clickStoneArea(7,7)"></td>
     </tr>
   </tbody>
 </table>
+
+<div class="dashboard">
+  <h2>CurrentTurn : {{turnState == 1 ? "Black" : "White"}}</h2>
+  <h2>Score</h2>
+  <h3>White : {{score.white}}</h3>
+  <h3>black : {{score.black}}</h3>
+</div>
