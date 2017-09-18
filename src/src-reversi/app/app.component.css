@@ -15,7 +15,9 @@ table {
   position:absolute;
   border-collapse:collapse;
 }
-
+.goBoard-background tr {
+    background-color: green;
+}
 .goBoard-background tr td {
   border:1px solid black;
   width:60px;
@@ -29,7 +31,6 @@ table {
   position:absolute;
   border-collapse:collapse;
 }
-
 .goBoard-area tr td {
   border : 1px solid transparent;
 }
